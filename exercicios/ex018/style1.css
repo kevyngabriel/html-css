@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "longshot" ;
+    src: url('fonts/Long_Shot.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    
+    /* 
+    Tipos de formatos:
+    - opentype (otf
+    - truetype (ttf)
+    - embedded-opentype 
+    - truetype-att (apple advanced tpography)
+    - sgv
+
+    */
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-family: 'longshot', Times, serif;
+    font-size: 4em;
+    font-weight: bold;
+}
