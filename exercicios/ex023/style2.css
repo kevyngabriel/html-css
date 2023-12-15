@@ -29,3 +29,7 @@ thead, tfoot{
 .num{
     text-align: end;
 }
+
+tbody> tr:nth-child(2n){
+    background-color: rgb(196, 203, 209);
+}
