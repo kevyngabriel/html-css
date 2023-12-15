@@ -8,7 +8,7 @@ table{
     width: 500px;
     padding: 50px;
     border-collapse: collapse;
-    
+    position: relative;
 }
 
 td{
@@ -32,4 +32,11 @@ thead, tfoot{
 
 tbody> tr:nth-child(2n){
     background-color: rgb(196, 203, 209);
+}
+
+thead > tr{
+    position: sticky;
+    top: 0;
+    background-color: gray;
+
 }
