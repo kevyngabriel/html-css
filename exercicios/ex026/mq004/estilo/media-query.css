@@ -2,5 +2,118 @@
 
 /* Todas as Demais Mideas*/
 
+/*Tipical Device Breakpoints
+
+Mobile: até 600px.
+iPhone X: 375 x 812.
+Tablet: minimo 768px.
+Desktop: minimo 992px
+High-res laptop or desktop: acima de 1200PX
+*/
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
 @media print {
+  * {
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  body {
+    background-image: url(../imagens/back-print.jpg);
+  }
+
+  main {
+    border: 2px solid black;
+  }
+
+  main h1 {
+    text-shadow: none;
+    color: black;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body {
+    background-image: url(../imagens/back-tablet.jpg);
+
+    img#phone {
+      display: none;
+    }
+
+    img#pc {
+      display: none;
+    }
+
+    img#tablet {
+      display: block;
+      margin: auto;
+    }
+
+    img#tv {
+      display: none;
+    }
+
+    img#print {
+      display: none;
+    }
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  body {
+    background-image: url(../imagens/back-pc.jpg);
+
+    img#phone {
+      display: none;
+    }
+
+    img#pc {
+      display: block;
+      margin: auto;
+    }
+
+    img#tablet {
+      display: none;
+    }
+
+    img#tv {
+      display: none;
+    }
+
+    img#print {
+      display: none;
+    }
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  body {
+    background-image: url(../imagens/back-tv.jpg);
+
+    img#phone {
+      display: none;
+    }
+
+    img#pc {
+      display: none;
+    }
+
+    img#tablet {
+      display: none;
+    }
+
+    img#tv {
+      display: block;
+      margin: auto;
+    }
+
+    img#print {
+      display: none;
+    }
+  }
 }
