@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background: #ece9fd;
+
+  padding: 60px 23px 63px;
+}
+
+h1 {
+  font-family: "Epilogue", sans-serif;
+  font-weight: 800;
+}
