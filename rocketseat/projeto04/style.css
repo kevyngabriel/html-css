@@ -16,7 +16,8 @@
 
   --font-size: 62.5%;
   --fs-body: 1.6rem;
-  --fs-heading: 4rem;
+  --fs-heading: clamp(4rem, 1rem + 5vw, 5.6rem);
+  --fs-heading-sm: clamp(3rem, 0.5rem + 3vw, 4rem);
 }
 
 body {
@@ -43,6 +44,9 @@ header {
   font-family: var(--ff-heading);
 
   text-align: center;
+
+  animation-name: topdown;
+  animation-duration: 700ms;
 }
 
 header p {
@@ -58,7 +62,7 @@ header p {
 }
 
 header h2 {
-  font-weight: 800;
+  font-weight: var(--fs-heading-sm);
   font-size: var(--fs-heading);
   line-height: 4.8rem;
 }
@@ -66,6 +70,8 @@ header h2 {
 main {
   display: grid;
   gap: 3.2rem;
+
+  animation: downtop 700ms 350ms backwards;
 }
 
 .card {
@@ -79,6 +85,8 @@ main {
   object-fit: cover;
 
   border-radius: 6px;
+
+  filter: brightness(0.6) saturate(1.5);
 
   transition: transform 200ms;
 }
@@ -118,15 +126,6 @@ main {
   width: fit-content;
 }
 
-header {
-  animation-name: topdown;
-  animation-duration: 700ms;
-}
-
-main {
-  animation: downtop 700ms 350ms backwards;
-}
-
 @keyframes topdown {
   0% {
     opacity: 0;
@@ -148,5 +147,44 @@ main {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (min-width: 810px) {
+  :root {
+    --fs-heading: 5.6rem;
+  }
+
+  .page {
+    max-width: 117rem;
+    padding: 0 5rem;
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1120px) {
+  main {
+    display: grid;
+    grid-template-areas:
+      "A B B"
+      "C C D";
+  }
+
+  main div:nth-child(1) {
+    grid-area: A;
+  }
+
+  main div:nth-child(2) {
+    grid-area: B;
+  }
+
+  main div:nth-child(3) {
+    grid-area: C;
+  }
+  main div:nth-child(4) {
+    grid-area: D;
   }
 }
