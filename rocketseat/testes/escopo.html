@@ -1,0 +1,35 @@
+<script>
+  {
+    //aqui dentro é um bloco de escope
+  }
+
+  {
+    let x = 0;
+    console.log(x);
+  }
+</script>
+
+## var
+<script>
+  // var é global e local
+
+  console.log("existe x antes do bloco?", x);
+  //hoisting
+  {
+    var x = 0;
+  }
+
+  console.log("existe x depois do bloco", x);
+</script>
+
+## Let e Const
+<script>
+  // const e let são locais e só funcionam no escopo onde foi criada
+
+  {
+    let y = 0;
+    console.log("existe y", y);
+  }
+
+  //console.log("existe x depois do bloco", y);
+</script>
