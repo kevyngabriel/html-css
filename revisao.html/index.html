@@ -142,14 +142,86 @@
             Figura 1: Logotipo de uma linguagem de programação
           </figcaption>
         </figure>
-      </section>
-      <input
+        <input
         type="text"
         id="p8"
         name="pergunta8"
         placeholder="Digite sua resposta..."
       />
+      </section>
+      <!--Tabela de pontuação-->
+      <section>
+        <h2>Tabela de Pontuação</h2>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Pontuação</th>
+              <th>Avaliação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>0-2</td>
+              <td>Não desita, cada tentativa é uma oportunidade de aprender</td>
+            </tr>
+            <tr>
+              <td>3-4</td>
+              <td>Você ainda precisa melhorar, continue tentando</td>
+            </tr>
+            <tr>
+              <td>5-7</td>
+              <td>Bom! Seu conhecimento em programação está satisfatório.</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Perfeito! Seu conhecimento em programação está excelente.</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2">Boa sorte na próxima! Continue aprendendo</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+      <!--Lista de respostas-->
+      <section>
+        <h2>Verifique suas respostas</h2>
+        <details>
+          <summary>Clique aqui para ver as respostas do quiz</summary>
+          <ol>
+            <li>HTML</li>
+            <li>Domínio</li>
+            <li>@kdsaf15GH#</li>
+            <li>1991</li>
+            <li>JavaScript, Python e Ruby</li>
+            <li>Arquivo deve ter extensão .HTML</li>
+            <li>Type</li>
+            <li>Java</li>
+          </ol>
+        </details>
+      </section>
+      <!--Fomulários-->
+      <section>
+        <h2>Nos de seu feedback</h2>
+        <form>
+          <fieldset>
+            <legend>Informações de contato</legend>
+            <label for="iname">Nome:</label>
+            <input type="name" name="name" id="iname">
+            <br>
+            <label for="iemail">Email:</label>
+            <input type="email" name="email" id="iemail"> <br>
+            <label for="comments">Comentários:</label> <br>
+            <textarea name="comments" id="icomments" rows="4" cols="50" placeholder="Digite seu comentário aqui!"></textarea> <br>
+            <button onclick="alert('Feedback Enviado!')">Envie o feedback</button>
+          </fieldset>
+        </form>
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <p>&copy Quiz de programadores. Todos os diretos reservados.</p>
+      <p>Para conhecer mais sobre mim <a href="sobremim.html" target="_blank">clique aqui</a></p>
+    </footer>
   </body>
 </html>
