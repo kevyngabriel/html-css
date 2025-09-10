@@ -1,12 +1,13 @@
+Boas práticas dna escrita de variáveis
 
-Como resolver problemas na linguagem de progrmação?
-Como melhorar minha lógica de progração?
+- Em inglês
+- Sem espaçoes ou acentuações especiais em nomes
+- Não pode iniciar com número
 
-1. Indentifique o que já sabe e faço!
-2. Quebre o grande problema em problemas menores!
+Apredemos:
 
-O que estou aprendendo de ferramentas do JS?
-
-- Executar funções
-- Variáveis
-- Concatenação
+- Tipo de dado: Number
+- Operador matemático
+- Manipulação de dados 
+    [] type conversion (typecasting)
+- Ordem de precedência

@@ -1,13 +1,4 @@
-Boas práticas dna escrita de variáveis
+# Melhorar a lógica dec programação
 
-- Em inglês
-- Sem espaçoes ou acentuações especiais em nomes
-- Não pode iniciar com número
-
-Apredemos:
-
-- Tipo de dado: Number
-- Operador matemático
-- Manipulação de dados 
-    [] type conversion (typecasting)
-- Ordem de precedência
+- Perguntas corretas
+- Entender o problema
