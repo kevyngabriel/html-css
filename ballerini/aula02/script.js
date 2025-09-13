@@ -1,29 +1,29 @@
 function adicionarTarefa() {
-    // cria uma mensagem no elemento <p> do HTML
-    let mensagem = "Tarefa adicionada com sucesso!";
-
-     //pega o elemento com ID mensagem e atribui o valor da variavel mensagem
-    document.getElementById("mensagem").textContent = mensagem;
-
-     //pega o valor do que é escrito pelo usuário no <input>
-    let inputTarefa = document.getElementById("inputTarefa")
+    // recebe valor do input do usuário
+    const inputTarefa = document.getElementById("inputTarefa")
 
     //cria uma variável para guardar o valor que o usuário guardou no input
-    let tarefa = inputTarefa.value
- 
-    //essa variavel puxa o valor de <ul id= "listaTarefas">     
-    let listaTarefas = document.getElementById("listaTarefas")
+    let tarefa = inputTarefa.value.trim()
 
-    //variável cria elementos <li>
-    let novaTarefa = document.createElement("li")
+    const mensagem = document.getElementById("mensagem")
 
-    //o valor da variavel "tarefa" é atribuido ao li
-        novaTarefa.textContent = tarefa
+        if (tarefa == "") {
+            //mostre uma mensagem de erro
+            let mensagemErro = "Digite uma tarefa para adiciona-la na sua lista!"
+            mensagem.textContent = mensagemErro
+            mensagem.style.color = "#A34743"
+        } else {
+            //mensagem de tarefa adicionada com sucesso
+            let mensagemSucesso = "Tarefa adicionada com sucesso!";
+            mensagem.textContent = mensagemSucesso;
+            mensagem.style.color = "#28A745"
 
-     //transforma a variavel listaTarefas em elemento pai do novaTarefa que é um li
-        listaTarefas.appendChild(novaTarefa)
-
-        //limpa o input do usuário
-        inputTarefa.value = ""
+            //cria um novo item (li) e insere na (lista ul) 
+            const listaTarefas = document.getElementById("listaTarefas")
+            let novaTarefa = document.createElement("li")
+            novaTarefa.textContent = tarefa
+            listaTarefas.appendChild(novaTarefa)
+         }
 }
 
+//  
